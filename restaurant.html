@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Restaurant Details | FoodFinder</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+    <!-- Navigation -->
+
+    <header>
+
+        <div class="logo">
+            🍽️ FoodFinder
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html">Restaurants</a>
+            <a href="#">Reviews</a>
+            <a href="#">About</a>
+        </nav>
+
+        <button class="login-btn">
+            Login
+        </button>
+
+    </header>
+
+
+    <!-- Restaurant Details -->
+
+    <main class="details-page">
+
+        <div class="details-container">
+
+
+            <!-- Restaurant Image -->
+
+            <div class="details-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4"
+                    alt="Spice Garden Restaurant">
+
+            </div>
+
+
+            <!-- Restaurant Information -->
+
+            <div class="details-info">
+
+                <div class="rating">
+                    ⭐ 4.5
+                </div>
+
+                <h1>Spice Garden</h1>
+
+                <p>🍛 South Indian</p>
+
+                <p>📍 Madurai</p>
+
+                <p>₹₹ • Casual Dining</p>
+
+                <p class="description">
+
+                    Spice Garden is a popular South Indian
+                    restaurant offering delicious traditional
+                    dishes in a comfortable dining environment.
+
+                </p>
+
+                <button class="review-button" id="showReviewForm">
+    ✍️ Write a Review
+    🍽️ FoodFinder
+
+[ Restaurant Image ]
+
+⭐ 4.5
+Spice Garden
+🍛 South Indian
+📍 Madurai
+₹₹ • Casual Dining
+
+About / Description
+
+[ ✍️ Write a Review ]
+
+Customer Reviews
+⭐️⭐️⭐️⭐️⭐️ Priya
+⭐️⭐️⭐️⭐️ Arun
+
+Write a Review
+[ Name ]
+[ Rating ]
+[ Your Review ]
+[ Submit Review ]
+</button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Reviews -->
+
+        <section class="reviews-section">
+
+            <h2>Customer Reviews</h2>
+
+
+            <div class="review-card">
+
+                <div class="review-rating">
+                    ⭐⭐⭐⭐⭐
+                </div>
+
+                <h3>Priya</h3>
+
+                <p>
+                    Amazing food and good service.
+                    Really enjoyed the experience!
+                </p>
+
+            </div>
+
+
+            <div class="review-card">
+
+                <div class="review-rating">
+                    ⭐⭐⭐⭐
+                </div>
+
+                <h3>Arun</h3>
+
+                <p>
+                    Food was tasty and the ambience
+                    was really nice.
+                </p>
+
+            </div>
+            <div id="newReviews"></div>
+
+        </section>
+        <!-- Write Review Form -->
+
+<section class="review-form-section" id="reviewFormSection">
+
+    <h2>Write a Review</h2>
+
+    <form id="reviewForm">
+
+        <label for="reviewName">
+            Your Name
+        </label>
+
+        <input
+            type="text"
+            id="reviewName"
+            placeholder="Enter your name"
+            required
+        >
+
+
+        <label for="reviewRating">
+            Rating
+        </label>
+
+        <select id="reviewRating" required>
+
+            <option value="">
+                Select rating
+            </option>
+
+            <option value="5">⭐⭐⭐⭐⭐ 5</option>
+
+            <option value="4">⭐⭐⭐⭐ 4</option>
+
+            <option value="3">⭐⭐⭐ 3</option>
+
+            <option value="2">⭐⭐ 2</option>
+
+            <option value="1">⭐ 1</option>
+
+        </select>
+
+
+        <label for="reviewText">
+            Your Review
+        </label>
+
+        <textarea
+            id="reviewText"
+            placeholder="Write your review..."
+            rows="5"
+            required
+        ></textarea>
+
+
+        <button type="submit">
+            Submit Review
+        </button>
+
+    </form>
+
+</section>
+
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 FoodFinder | Restaurant Discovery & Review
+        </p>
+
+    </footer>
+<script src="script.js"></script>
+
+</body>
+
+</html>

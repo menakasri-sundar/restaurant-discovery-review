@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Restaurant Discovery & Review</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo">🍽️ FoodFinder</div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Restaurants</a>
+            <a href="#">Reviews</a>
+            <a href="#">About</a>
+        </nav>
+
+        <a href="login.html" class="login-btn">Login</a>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p>🍴 FIND YOUR NEXT FAVOURITE</p>
+
+            <h1>
+                Discover Great<br>
+                Restaurants Near You
+            </h1>
+
+            <p>
+                Explore restaurants, check ratings and read customer reviews.
+            </p>
+
+            <div class="search-box">
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search restaurant or cuisine..."
+    >
+
+    <button id="searchButton">🔍 Search</button>
+
+</div>
+
+        </div>
+
+    </section>
+
+<section class="categories">
+
+    <h2>Explore Categories</h2>
+
+    <p class="category-subtitle">
+        Find restaurants based on your favourite food
+    </p>
+
+    <div class="category-container">
+<div class="category-card" data-category="All">
+    <div class="category-icon">🍽️</div>
+    <h3>All</h3>
+</div>
+        <div class="category-card" data-category="Indian">
+            <div class="category-icon">🍛</div>
+            <h3>Indian</h3>
+        </div>
+
+        <div class="category-card" data-category="Pizza">
+            <div class="category-icon">🍕</div>
+            <h3>Pizza</h3>
+        </div>
+
+        <div class="category-card" data-category="Fast Food">
+            <div class="category-icon">🍔</div>
+            <h3>Fast Food</h3>
+        </div>
+
+        <div class="category-card" data-category="Chinese">
+            <div class="category-icon">🍜</div>
+            <h3>Chinese</h3>
+        </div>
+
+        <div class="category-card" data-category="Cafe">
+            <div class="category-icon">☕</div>
+            <h3>Cafe</h3>
+        </div>
+
+        <div class="category-card" data-category="Desserts">
+            <div class="category-icon">🍰</div>
+            <h3>Desserts</h3>
+        </div>
+
+    </div>
+
+</section>
+<!-- Restaurant Section -->
+
+<section class="restaurants">
+
+    <h2>Popular Restaurants</h2>
+
+    <p class="restaurant-subtitle">
+        Explore highly rated restaurants around you
+    </p>
+
+    <div class="restaurant-container">
+
+        <!-- Restaurant 1 -->
+
+        <div class="restaurant-card" data-name="Spice Garden" data-category="Indian">
+        
+
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4"
+                 alt="Spice Garden">
+
+            <div class="card-content">
+
+                <div class="rating">⭐ 4.5</div>
+
+                <h3>Spice Garden</h3>
+
+                <p>🍛 South Indian</p>
+
+                <p>📍 Madurai</p>
+
+                <p class="price">₹₹ • Casual Dining</p>
+
+                <a href="restaurant.html" class="details-button">
+    View Details
+</a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Restaurant 2 -->
+
+
+            <div class="restaurant-card" data-name="Food Palace" data-category="Multi Cuisine">
+            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5"
+                 alt="Food Palace">
+
+            <div class="card-content">
+
+                <div class="rating">⭐ 4.2</div>
+
+                <h3>Food Palace</h3>
+
+                <p>🍕 Multi Cuisine</p>
+
+                <p>📍 Madurai</p>
+
+                <p class="price">₹₹ • Family Dining</p>
+
+                <a href="restaurant.html" class="details-button">
+    View Details
+</a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Restaurant 3 -->
+
+        <div class="restaurant-card" data-name="Chennai Kitchen" data-category="South Indian">
+
+            <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9"
+                 alt="Chennai Kitchen">
+
+            <div class="card-content">
+
+                <div class="rating">⭐ 4.6</div>
+
+                <h3>Chennai Kitchen</h3>
+
+                <p>🍛 South Indian</p>
+
+                <p>📍 Madurai</p>
+
+                <p class="price">₹ • Budget Friendly</p>
+
+                <a href="restaurant.html" class="details-button">
+    View Details
+</a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Restaurant 4 -->
+
+        <div class="restaurant-card" data-name="Burger Hub" data-category="Fast Food">
+
+            <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add"
+                 alt="Burger Hub">
+
+            <div class="card-content">
+
+                <div class="rating">⭐ 4.3</div>
+
+                <h3>Burger Hub</h3>
+
+                <p>🍔 Fast Food</p>
+
+                <p>📍 Madurai</p>
+
+                <p class="price">₹₹ • Quick Bites</p>
+
+                <a href="restaurant.html" class="details-button">
+    View Details
+</a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Restaurant 5 -->
+
+        <div class="restaurant-card" data-name="Coffee Corner" data-category="Cafe">
+
+            <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24"
+                 alt="Coffee Corner">
+
+            <div class="card-content">
+
+                <div class="rating">⭐ 4.4</div>
+
+                <h3>Coffee Corner</h3>
+
+                <p>☕ Cafe</p>
+
+                <p>📍 Madurai</p>
+
+                <p class="price">₹ • Cafe & Snacks</p>
+
+                <a href="restaurant.html" class="details-button">
+    View Details
+</a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Restaurant 6 -->
+
+        <div class="restaurant-card" data-name="Dragon House" data-category="Chinese">
+
+            <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141"
+                 alt="Dragon House">
+
+            <div class="card-content">
+
+                <div class="rating">⭐ 4.1</div>
+
+                <h3>Dragon House</h3>
+
+                <p>🍜 Chinese</p>
+
+                <p>📍 Madurai</p>
+
+                <p class="price">₹₹ • Dine In</p>
+
+                <a href="restaurant.html" class="details-button">
+    View Details
+</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 FoodFinder | Restaurant Discovery & Review</p>
+    </footer>
+
+    <script>
+
+    const isLoggedIn =
+        localStorage.getItem("isLoggedIn");
+
+    const userName =
+        localStorage.getItem("userName");
+
+    if (isLoggedIn === "true" && userName) {
+
+    const loginButton =
+        document.querySelector(".login-btn");
+
+    if (loginButton) {
+
+        loginButton.textContent =
+            "Logout (" + userName + ")";
+
+        loginButton.href = "#";
+
+        loginButton.addEventListener("click", function(event) {
+
+            event.preventDefault();
+
+            localStorage.removeItem("isLoggedIn");
+
+            window.location.href = "index.html";
+
+        });
+
+    }
+
+}
+
+</script>
+    <script src="script.js"></script>
+
+</body>
+</html>
